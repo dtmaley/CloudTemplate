@@ -249,5 +249,4 @@ _Pvt_Extensions
 KenticoCloudBase/ClientApp/dist/
 KenticoCloudBase/package-lock.json
 KenticoCloudBase/node_modules/
-KenticoCloudBase/Properties/launchSettings.json
 KenticoCloudBase/wwwroot/dist/
