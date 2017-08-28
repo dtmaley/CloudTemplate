@@ -50,7 +50,7 @@
     "style-loader": "0.17.0",
     "to-object-path": "^0.3.0",
     "to-string-loader": "1.1.5",
-    "typescript": "^2.4.0",
+    "typescript": "2.4.0",
     "url-loader": "0.5.8",
     "webpack": "^2.5.1",
     "webpack-hot-middleware": "2.18.0",
