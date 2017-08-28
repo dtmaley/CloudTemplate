@@ -1,0 +1,2 @@
+# CloudTemplate
+Kentico Cloud Template
