@@ -16,12 +16,7 @@
       }
     },
     "KenticoCloudBase": {
-      "commandName": "IISExpress",
-      "launchBrowser": true,
-      "environmentVariables": {
-        "Key": "Value",
-        "ASPNETCORE_ENVIRONMENT": "Development"
-      }
+      "commandName": "Project"    
     }
   }
 }

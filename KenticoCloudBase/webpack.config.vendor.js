@@ -25,11 +25,11 @@ module.exports = (env) => {
                 '@angular/platform-browser',
                 '@angular/platform-browser-dynamic',
                 '@angular/router',
+                'angular2-toaster/toaster.css',
                 'bootstrap',
                 'bootstrap/dist/css/bootstrap.css',
                 'core-js',
                 'es6-shim',
-                'es6-promise',
                 'event-source-polyfill',
                 'jquery',
                 'zone.js',
@@ -71,6 +71,7 @@ module.exports = (env) => {
             new webpack.optimize.UglifyJsPlugin()
         ])
     });
+    return [clientBundleConfig];
 
     return [clientBundleConfig];
 }
