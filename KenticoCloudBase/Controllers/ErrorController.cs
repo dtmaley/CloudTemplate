@@ -1,7 +1,7 @@
-﻿using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
-namespace CloudBoilerplateNet.Controllers
+namespace KenticoCloudBase.Controllers
 {
     public class ErrorController : Controller
     {

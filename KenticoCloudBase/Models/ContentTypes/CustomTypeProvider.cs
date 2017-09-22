@@ -9,8 +9,10 @@ namespace KenticoCloudBase.Models
         {
             switch (contentType)
             {
-                case "article":
-                    return typeof(Article);
+                case "associate_profile":
+                    return typeof(AssociateProfile);
+                case "associate_profile_experience":
+                    return typeof(AssociateProfileExperience);
                 default:
                     return null;
             }

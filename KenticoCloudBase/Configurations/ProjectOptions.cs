@@ -1,4 +1,4 @@
-﻿namespace KenticoCloudBase
+namespace KenticoCloudBase.Configurations
 {
     public class ProjectOptions
     {

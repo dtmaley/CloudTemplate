@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -7,6 +7,7 @@ using KenticoCloud.Delivery.InlineContentItems;
 using Newtonsoft.Json.Linq;
 using Microsoft.Extensions.Options;
 using Microsoft.Extensions.Caching.Memory;
+using KenticoCloudBase.Configurations;
 
 namespace KenticoCloudBase.Services
 {

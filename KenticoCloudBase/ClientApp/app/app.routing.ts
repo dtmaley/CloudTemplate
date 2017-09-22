@@ -2,15 +2,13 @@
 import { NgModule } from '@angular/core';  
 import { Routes, RouterModule } from '@angular/router';
 
-import { FetchDataComponent } from "./components/fetchdata/fetchdata.component";
-import { HomeComponent } from "./components/home/home.component";
-import { CounterComponent } from "./components/counter/counter.component";
+import { AboutComponent } from "./components/about/about.component";
+import { ProfilesComponent } from "./components/profiles/profiles.component";
 
 const routes: Routes = [
-    { path: '', redirectTo: 'home', pathMatch: 'full' },
-    { path: 'home', component: HomeComponent },
-    { path: 'counter', component: CounterComponent },
-    { path: 'fetch-data', component: FetchDataComponent }
+    { path: '', redirectTo: 'profiles', pathMatch: 'full' },
+    { path: 'profiles', component: ProfilesComponent },
+    { path: 'about', component: AboutComponent },
 ];
 
 @NgModule({
@@ -19,4 +17,4 @@ const routes: Routes = [
 })
 export class AppRoutingModule { }
 
-export const routedComponents = [HomeComponent, CounterComponent, FetchDataComponent]; 
+export const routedComponents = [ProfilesComponent, AboutComponent]; 

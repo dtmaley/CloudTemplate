@@ -1,0 +1,37 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <h1>Associate Profiles:</h1>
+            <p *ngIf="!profiles"><em>Loading...</em></p>
+        </div>
+    </div>
+
+    <div *ngIf="profiles">
+        <div class="row">
+            <div class="col-md-12">
+                <table class='table table-striped'>
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Title</th>
+                            <th>Status</th>
+                            <th class="align-right">Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let profile of profiles">
+                            <td>{{ profile.associateName }}</td>
+                            <td>{{ profile.associateTitle }}</td>
+                            <td>{{ profile.associateStatus[0].name }}</td>
+                            <td class="align-right">
+                                <a [routerLink]="['/about']" class="btn btn-outline-primary btn-sm">
+                                    View Profile
+                                </a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
