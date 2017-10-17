@@ -13,7 +13,7 @@ namespace KenticoCloudBase.Controllers
 
         public ProfileController(IDeliveryClient deliveryClient) : base(deliveryClient)
         {
-     
+
         }
 
         [HttpGet("[action]")]
@@ -31,7 +31,23 @@ namespace KenticoCloudBase.Controllers
             {
                 log.Error(ex.Message, ex);
                 throw;
-            }          
+            }
+        }
+
+        [HttpGet("[action]")]
+        public async Task<IActionResult> Get(string codeName)
+        {
+            try
+            {
+                DeliveryItemResponse<AssociateProfile> result = await DeliveryClient.GetItemAsync<AssociateProfile>(codeName);
+
+               return Ok(result.Item);
+            }
+            catch (Exception ex)
+            {
+                log.Error(ex.Message, ex);
+                throw;
+            }
         }
     }
 }

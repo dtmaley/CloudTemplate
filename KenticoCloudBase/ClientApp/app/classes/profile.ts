@@ -1,5 +1,6 @@
 import { TaxonomyTerm } from "./taxonomyTerm";
 import { Experience } from "./experience";
+import { ContentItemSystemAttribute } from "./contentItemSystemAttribute";
 
 export class Profile {
     associateName: string;
@@ -8,6 +9,7 @@ export class Profile {
     associateStatus: TaxonomyTerm[];
     associateSummary: string;
     developmentExperience: TaxonomyTerm[];
+    methodologies: TaxonomyTerm[];
     functionalBusinessExperience: TaxonomyTerm[];
     industriesServed: TaxonomyTerm[];
     additionalTechnicalExperience: string;
@@ -19,4 +21,5 @@ export class Profile {
     certificationsAndProfessionalMemberships: TaxonomyTerm[];
     completeAssociateProfile: string;
     associateExperiences: Experience[];
+    system: ContentItemSystemAttribute;
 }

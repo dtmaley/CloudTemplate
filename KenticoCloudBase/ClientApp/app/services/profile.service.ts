@@ -22,4 +22,12 @@ export class ProfileService {
             .then(response => response.json() as Profile[])
             .catch(error => this.errorService.handleError(error));
     }
+
+    getProfile(codename: string): Promise<Profile> {
+        const url = `${this.profileUrl}/Get`;
+        return this.http.get(url, { params: { codename: codename } })
+            .toPromise()
+            .then(response => response.json() as Profile)
+            .catch(error => this.errorService.handleError(error));
+    }
 }

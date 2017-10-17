@@ -1,4 +1,4 @@
 export class TaxonomyTerm {
     name: string;
-    codeName: string;
+    codename: string;
 }

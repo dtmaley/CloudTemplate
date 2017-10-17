@@ -19,6 +19,7 @@ namespace KenticoCloudBase.Models
         public const string AssociateStatusCodename = "associate_status";
         public const string AssociateSummaryCodename = "associate_summary";
         public const string DevelopmentExperienceCodename = "development_experience";
+        public const string MethodologiesCodename = "methodologies";
         public const string FunctionalBusinessExperienceCodename = "functional_business_experience";
         public const string IndustriesServedCodename = "industries_served";
         public const string AdditionalTechnicalExperienceCodename = "additional_technical_experience";
@@ -26,7 +27,7 @@ namespace KenticoCloudBase.Models
         public const string ResultsCodename = "results";
         public const string AssociateExperiencesCodename = "associate_experiences";
         public const string EducationCodename = "education";
-        public const string CommunityInvolvmentCodename = "community_involvment";
+        public const string CommunityInvolvementCodename = "community_involvement";
         public const string TechnicalAndBusinessSkillsCodename = "technical_and_business_skills";
         public const string CertificationsAndProfessionalMembershipsCodename = "certifications_and_professional_memberships";
         public const string CompleteAssociateProfileCodename = "complete_associate_profile";
@@ -37,14 +38,15 @@ namespace KenticoCloudBase.Models
         public IEnumerable<TaxonomyTerm> AssociateStatus { get; set; }
         public string AssociateSummary { get; set; }
         public IEnumerable<TaxonomyTerm> DevelopmentExperience { get; set; }
+        public IEnumerable<TaxonomyTerm> Methodologies { get; set; }
         public IEnumerable<TaxonomyTerm> FunctionalBusinessExperience { get; set; }
         public IEnumerable<TaxonomyTerm> IndustriesServed { get; set; }
         public string AdditionalTechnicalExperience { get; set; }
         public string ClientFeedback { get; set; }
         public string Results { get; set; }
-        public IEnumerable<AssociateProfileExperience> AssociateExperiences { get; set; }
+        public IEnumerable<object> AssociateExperiences { get; set; }
         public string Education { get; set; }
-        public string CommunityInvolvment { get; set; }
+        public string CommunityInvolvement { get; set; }
         public IEnumerable<TaxonomyTerm> TechnicalAndBusinessSkills { get; set; }
         public IEnumerable<TaxonomyTerm> CertificationsAndProfessionalMemberships { get; set; }
         public IEnumerable<Asset> CompleteAssociateProfile { get; set; }
