@@ -68,7 +68,6 @@ namespace KenticoCloudBase
                     HotModuleReplacement = true,
                     HotModuleReplacementEndpoint = "/dist/__webpack_hmr"
                 });
-                
             }
             else
             {               
@@ -80,7 +79,7 @@ namespace KenticoCloudBase
                 app.UseStatusCodePagesWithReExecute("/Error/{0}");
 
                 // IP Validation Middleware
-                app.UseMiddleware<IpRestrictionMiddleware>();
+                // app.UseMiddleware<IpRestrictionMiddleware>();
             }
 
             app.UseStaticFiles();
